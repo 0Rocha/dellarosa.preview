@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Refúgio Dellarosa | Chalés em Itapema - SC</title>
+  <meta name="description" content="O Refúgio Dellarosa é um espaço de hospedagem e chalés localizado em meio à natureza, na cidade de Itapema, Santa Catarina." />
+  <meta property="og:title" content="Refúgio Dellarosa | Chalés em Itapema - SC" />
+  <meta property="og:description" content="Conforto, exclusividade e contato com a Mata Atlântica — a poucos minutos do centro de Itapema." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Refúgio Dellarosa",
+    "description": "O Refúgio Dellarosa é um espaço de hospedagem e chalés localizado em meio à natureza, na cidade de Itapema, Santa Catarina.",
+    "telephone": "+5547992504916",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Mata Atlântica, Alto Areal",
+      "addressLocality": "Itapema",
+      "addressRegion": "SC",
+      "postalCode": "88220-000",
+      "addressCountry": "BR"
+    },
+    "hasMap": "https://maps.google.com/?cid=6201172214600827922&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA"
+  }
+  </script>
+  <style>
+    :root {
+      --accent: #c9a227;
+      --bg: #100f0d;
+      --fg: #f6f2e9;
+      --muted: rgba(246, 242, 233, 0.72);
+      --surface: rgba(255, 255, 255, 0.045);
+      --border: rgba(246, 242, 233, 0.14);
+      --radius: 20px;
+      --shape: 999px;
+      --on-accent: #111827;
+      --shadow: 0 16px 44px rgba(0, 0, 0, 0.2);
+      --header-h: 68px;
+      --wa: #25d366;
+      --font-display: "Cormorant Garamond", Georgia, serif;
+      --font-body: "Manrope", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-body);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    h1, h2, h3 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      line-height: 1.12;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+    img { max-width: 100%; display: block; }
+    ul { list-style: none; }
+    .wrap {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .site-header {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      z-index: 30;
+      padding-top: 14px;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: var(--header-h);
+      gap: 16px;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: var(--shape);
+      padding: 0 18px;
+      box-shadow: var(--shadow);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-size: 20px;
+    }
+    .brand:hover { color: var(--fg); }
+    .mark {
+      width: 34px; height: 34px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: var(--on-accent);
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-family: var(--font-body);
+      font-size: 15px;
+    }
+    .nav-links {
+      display: none;
+      gap: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .nav-links a:hover { color: var(--fg); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 24px;
+      border-radius: var(--shape);
+      font-size: 15px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.2s ease, filter 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover { color: inherit; }
+    .btn-primary { background: var(--accent); color: var(--on-accent); }
+    .btn-primary:hover {
+      filter: brightness(1.08);
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 10px 28px rgba(201, 162, 39, 0.28);
+      color: var(--on-accent);
+    }
+    .btn-ghost {
+      border-color: var(--border);
+      color: var(--fg);
+      background: transparent;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+    .btn-sm { padding: 9px 18px; font-size: 14px; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: var(--shape);
+      padding: 7px 14px;
+    }
+    .section {
+      padding: 104px 0;
+      border-top: 1px solid var(--border);
+      scroll-margin-top: 24px;
+    }
+    .section-title {
+      font-size: clamp(28px, 4vw, 42px);
+      margin: 18px 0 14px;
+    }
+    .section-sub {
+      color: var(--muted);
+      max-width: 58ch;
+      margin-bottom: 28px;
+      font-size: clamp(16px, 2vw, 18px);
+    }
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: flex-end;
+      padding: calc(var(--header-h) + 48px) 0 72px;
+      overflow: hidden;
+    }
+    .hero-media { position: absolute; inset: 0; z-index: 0; }
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-scrim {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(16, 15, 13, 0.35) 0%, rgba(16, 15, 13, 0.78) 62%, rgba(16, 15, 13, 0.94) 100%),
+        radial-gradient(circle at 70% 20%, rgba(201, 162, 39, 0.18), transparent 45%);
+    }
+    .hero-copy {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      animation: hero-rise 900ms ease both;
+    }
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 84px);
+      margin: 22px 0 18px;
+      max-width: 12ch;
+    }
+    .hero .lead {
+      color: rgba(246, 242, 233, 0.86);
+      font-size: clamp(16px, 2vw, 19px);
+      max-width: 42ch;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+    .about-grid, .location-grid {
+      display: grid;
+      gap: 36px;
+    }
+    .info-stack { display: grid; gap: 14px; }
+    .info-row {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) - 4px);
+      border-left: 3px solid var(--accent);
+      padding: 18px 20px;
+    }
+    .info-row .k {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .info-row p, .info-row a { color: var(--muted); word-break: break-word; }
+    .info-row a:hover { color: var(--fg); }
+    .chalet-list { display: grid; gap: 72px; margin-top: 18px; }
+    .chalet-block {
+      display: grid;
+      gap: 28px;
+      align-items: center;
+    }
+    .chalet-media {
+      min-height: clamp(280px, 48vw, 460px);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .chalet-media img {
+      width: 100%;
+      height: 100%;
+      min-height: clamp(280px, 48vw, 460px);
+      object-fit: cover;
+    }
+    .chalet-copy h3 {
+      font-size: clamp(28px, 3.5vw, 36px);
+      margin-bottom: 12px;
+    }
+    .chalet-copy p { color: var(--muted); margin-bottom: 18px; }
+    .chalet-copy ul { display: grid; gap: 10px; margin-bottom: 22px; }
+    .chalet-copy li {
+      position: relative;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .chalet-copy li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.65em;
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .chalet-thumb {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      border-radius: calc(var(--radius) - 6px);
+      border: 1px solid var(--border);
+      object-fit: cover;
+      margin-bottom: 22px;
+    }
+    .section-amenities {
+      background:
+        radial-gradient(circle at 10% 0%, rgba(201, 162, 39, 0.08), transparent 40%),
+        var(--bg);
+    }
+    .amenity-list {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1fr;
+      margin-top: 12px;
+    }
+    .amenity-list li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px 20px;
+      border-top: 1px solid var(--border);
+      font-size: 17px;
+    }
+    .amenity-mark {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+    .gallery {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-item {
+      height: 220px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .gallery-item:nth-child(3n) {
+      grid-column: span 2;
+      height: 260px;
+    }
+    .map {
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      min-height: 320px;
+    }
+    .map iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+      border: 0;
+      display: block;
+    }
+    .cta-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: calc(var(--radius) + 6px);
+      padding: clamp(36px, 6vw, 64px) clamp(24px, 4vw, 48px);
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .cta-box h2 {
+      font-size: clamp(28px, 4.5vw, 44px);
+      margin: 16px 0 14px;
+    }
+    .cta-box > p {
+      color: var(--muted);
+      max-width: 48ch;
+      margin: 0 auto 30px;
+    }
+    .cta-box .actions { justify-content: center; }
+    .cta-profiles {
+      margin-top: 28px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .cta-profiles a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .site-footer {
+      padding: 38px 0 110px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: space-between;
+    }
+    .footer-brand {
+      color: var(--fg);
+      font-family: var(--font-display);
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    .footer-links { display: grid; gap: 10px; }
+    .float-wa {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 40;
+      background: var(--wa);
+      color: #fff;
+      border-radius: var(--shape);
+      padding: 14px 20px;
+      font-weight: 600;
+      font-size: 15px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    }
+    .float-wa:hover { color: #fff; filter: brightness(1.05); transform: translateY(-2px); }
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    @keyframes hero-rise {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: none; }
+    }
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+    @media (min-width: 760px) {
+      .nav-links { display: flex; }
+      .about-grid, .location-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+        align-items: start;
+      }
+      .chalet-block {
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 40px;
+      }
+      .chalet-block.is-reversed .chalet-media { order: 2; }
+      .chalet-block.is-reversed .chalet-copy { order: 1; }
+      .amenity-list { grid-template-columns: repeat(2, 1fr); }
+      .gallery { grid-template-columns: repeat(3, 1fr); }
+      .gallery-item, .gallery-item:nth-child(3n) {
+        grid-column: span 1;
+        height: 260px;
+      }
+      .gallery-item:nth-child(1),
+      .gallery-item:nth-child(5) {
+        grid-column: span 2;
+        height: 320px;
+      }
+      .footer-links { text-align: right; }
+    }
+    @media (max-width: 480px) {
+      .nav .btn-sm { padding: 8px 14px; }
+      .float-wa { right: 14px; bottom: 14px; padding: 12px 16px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal, .hero-copy, .btn {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="#inicio" class="brand" aria-label="Refúgio Dellarosa — início">
+        <span class="mark" aria-hidden="true">R</span>
+        <span>Refúgio Dellarosa</span>
+      </a>
+      <nav class="nav-links" aria-label="Seções">
+        <a href="#sobre">Sobre</a>
+        <a href="#acomodacoes">Acomodações</a>
+        <a href="#comodidades">Comodidades</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#reserva">Reserva</a>
+      </nav>
+      <a class="btn btn-primary btn-sm" href="https://wa.me/5547992504916?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Ref%C3%BAgio%20Dellarosa%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20reserva." target="_blank" rel="noopener noreferrer">Reservar</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero" aria-label="Apresentação">
+      <div class="hero-media">
+        <img src="public/images/hero/hero-exterior.jpeg" alt="Chalé de madeira elevado em meio à Mata Atlântica no Refúgio Dellarosa" />
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+      <div class="wrap hero-copy">
+        <p class="eyebrow">Hospedagem · Itapema - SC</p>
+        <h1>Refúgio Dellarosa</h1>
+        <p class="lead">Conforto, exclusividade e contato com a Mata Atlântica — a poucos minutos do centro de Itapema.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/5547992504916?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Ref%C3%BAgio%20Dellarosa%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20reserva." target="_blank" rel="noopener noreferrer">Reservar no WhatsApp</a>
+          <a class="btn btn-ghost" href="https://maps.google.com/?cid=6201172214600827922&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer">Como chegar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section reveal">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">Sobre o refúgio</p>
+          <h2 class="section-title">Natureza, conforto e exclusividade</h2>
+          <p class="section-sub">Entre a vegetação do Alto Areal, o Refúgio Dellarosa oferece chalés privativos com arquitetura rústica inspirada no conceito de casa na árvore. Um espaço pensado para casais e pequenos grupos que buscam pausa, natureza e aconchego.</p>
+          <p class="section-sub">O Refúgio Dellarosa é um espaço de hospedagem e chalés localizado em meio à natureza, na cidade de Itapema, Santa Catarina.</p>
+        </div>
+        <div class="info-stack" aria-label="Informações práticas">
+          <div class="info-row">
+            <span class="k">Endereço</span>
+            <p>Rua Mata Atlântica, Alto Areal, Itapema - SC, 88220-000</p>
+          </div>
+          <div class="info-row">
+            <span class="k">Referência</span>
+            <p>Aproximadamente 5,7 km do centro da cidade.</p>
+          </div>
+          <div class="info-row">
+            <span class="k">Contato</span>
+            <p><a href="tel:+5547992504916">(47) 99250-4916</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="acomodacoes" class="section reveal">
+      <div class="wrap">
+        <p class="eyebrow">Acomodações</p>
+        <h2 class="section-title">Dois chalés privativos</h2>
+        <p class="section-sub">Arquitetura rústica inspirada no conceito de casa na árvore, pensada para casais e pequenos grupos.</p>
+
+        <div class="chalet-list">
+          <article class="chalet-block">
+            <div class="chalet-media">
+              <img src="public/images/chalets/dellarosa-exterior.jpeg" alt="Fachada e deck do Chalé Dellarosa com vista para a floresta" />
+            </div>
+            <div class="chalet-copy">
+              <h3>Chalé Dellarosa</h3>
+              <p>Chalé privativo com arquitetura rústica inspirada em casa na árvore, pensado para casais e pequenos grupos.</p>
+              <ul>
+                <li>Unidade privativa em meio à natureza</li>
+                <li>Arquitetura rústica acolhedora</li>
+                <li>Ideal para casais e pequenos grupos</li>
+                <li>Capacidade de até 4 pessoas em algumas unidades</li>
+              </ul>
+              <img class="chalet-thumb" src="public/images/chalets/dellarosa-interior.jpeg" alt="Interior do chalé com banheira de hidromassagem e área de estar" />
+              <a class="btn btn-primary" href="https://wa.me/5547992504916?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Ref%C3%BAgio%20Dellarosa%20e%20gostaria%20de%20consultar%20disponibilidade%20do%20Chal%C3%A9%20Dellarosa." target="_blank" rel="noopener noreferrer">Consultar Chalé Dellarosa</a>
+            </div>
+          </article>
+
+          <article class="chalet-block is-reversed">
+            <div class="chalet-media">
+              <img src="public/images/chalets/mont-verde-exterior.jpeg" alt="Chalé Mont' Verde visto do caminho entre a vegetação" />
+            </div>
+            <div class="chalet-copy">
+              <h3>Chalé Mont' Verde</h3>
+              <p>Chalé privativo integrado à vegetação do Alto Areal, com a mesma proposta de conforto e exclusividade do Refúgio.</p>
+              <ul>
+                <li>Unidade privativa em meio à natureza</li>
+                <li>Arquitetura rústica acolhedora</li>
+                <li>Ideal para casais e pequenos grupos</li>
+                <li>Capacidade de até 4 pessoas em algumas unidades</li>
+              </ul>
+              <img class="chalet-thumb" src="public/images/chalets/mont-verde-interior.jpeg" alt="Cozinha equipada e mesa do Chalé Mont' Verde" />
+              <a class="btn btn-primary" href="https://wa.me/5547992504916?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Ref%C3%BAgio%20Dellarosa%20e%20gostaria%20de%20consultar%20disponibilidade%20do%20Chal%C3%A9%20Mont%27%20Verde." target="_blank" rel="noopener noreferrer">Consultar Chalé Mont' Verde</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="comodidades" class="section section-amenities reveal">
+      <div class="wrap">
+        <p class="eyebrow">Comodidades</p>
+        <h2 class="section-title">O essencial para uma estadia tranquila</h2>
+        <p class="section-sub">Recursos disponíveis no Refúgio para conforto e autonomia durante a hospedagem.</p>
+        <ul class="amenity-list">
+          <li><span class="amenity-mark" aria-hidden="true"></span>Ar-condicionado</li>
+          <li><span class="amenity-mark" aria-hidden="true"></span>Banheira / Jacuzzi privativa</li>
+          <li><span class="amenity-mark" aria-hidden="true"></span>Cozinha equipada</li>
+          <li><span class="amenity-mark" aria-hidden="true"></span>Micro-ondas</li>
+          <li><span class="amenity-mark" aria-hidden="true"></span>Refrigerador</li>
+          <li><span class="amenity-mark" aria-hidden="true"></span>Jardim</li>
+          <li><span class="amenity-mark" aria-hidden="true"></span>Estacionamento</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="galeria" class="section reveal">
+      <div class="wrap">
+        <p class="eyebrow">Galeria</p>
+        <h2 class="section-title">Ambiente, acomodações e natureza</h2>
+        <p class="section-sub">Fotografias reais do Refúgio Dellarosa e do entorno em Itapema.</p>
+        <div class="gallery">
+          <figure class="gallery-item"><img src="public/images/gallery/entrada-bem-vindos.jpeg" alt="Entrada do Refúgio com arco de madeira Sejam Bem-Vindos" /></figure>
+          <figure class="gallery-item"><img src="public/images/gallery/mesa-vista.jpeg" alt="Mesa de jantar do chalé com luz natural e vista para o verde" /></figure>
+          <figure class="gallery-item"><img src="public/images/gallery/deck-rede.jpeg" alt="Deck de madeira com rede e vista para a floresta" /></figure>
+          <figure class="gallery-item"><img src="public/images/gallery/vista-por-do-sol.jpeg" alt="Vista do por do sol sobre o vale a partir do Refúgio" /></figure>
+          <figure class="gallery-item"><img src="public/images/gallery/trilha-floresta.jpeg" alt="Trilha sombreada entre árvores no entorno do Refúgio" /></figure>
+          <figure class="gallery-item"><img src="public/images/gallery/balanco-jardim.jpeg" alt="Balanço de madeira no jardim cercado pela natureza" /></figure>
+          <figure class="gallery-item"><img src="public/images/gallery/estacionamento.jpeg" alt="Área de estacionamento Dellarosa sob passarela de madeira" /></figure>
+          <figure class="gallery-item"><img src="public/images/gallery/pavao.jpeg" alt="Pavão com plumagem aberta no entorno do Refúgio" /></figure>
+          <figure class="gallery-item"><img src="public/images/gallery/capela-noturna.jpeg" alt="Capela iluminada à noite no entorno do espaço" /></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="section reveal">
+      <div class="wrap location-grid">
+        <div>
+          <p class="eyebrow">Localização</p>
+          <h2 class="section-title">Alto Areal, Itapema - SC</h2>
+          <p class="section-sub">Rua Mata Atlântica, Alto Areal, Itapema - SC, 88220-000. Aproximadamente 5,7 km do centro da cidade.</p>
+          <a class="btn btn-ghost" href="https://maps.google.com/?cid=6201172214600827922&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a>
+        </div>
+        <div class="map">
+          <iframe title="Mapa do Refúgio Dellarosa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Rua%20Mata%20Atl%C3%A2ntica%20-%20Alto%20Areal%2C%20Itapema%20-%20SC%2C%2088220-000&amp;output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserva" class="section reveal">
+      <div class="wrap">
+        <div class="cta-box">
+          <p class="eyebrow">Reservas e contato</p>
+          <h2>Pronto para conhecer o Refúgio?</h2>
+          <p>Fale conosco pelo WhatsApp para consultar disponibilidade e tirar dúvidas sobre as acomodações.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://wa.me/5547992504916?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Ref%C3%BAgio%20Dellarosa%20e%20gostaria%20de%20falar%20sobre%20uma%20reserva." target="_blank" rel="noopener noreferrer">Reservar no WhatsApp</a>
+            <a class="btn btn-ghost" href="tel:+5547992504916">(47) 99250-4916</a>
+          </div>
+          <p class="cta-profiles">
+            Também no Instagram e Airbnb como
+            <a href="https://www.instagram.com/explore/search/keyword/?q=Cabana%20Ref%C3%BAgio%20Dellarosa" target="_blank" rel="noopener noreferrer">Cabana Refúgio Dellarosa</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-brand">Refúgio Dellarosa</p>
+        <p>Rua Mata Atlântica, Alto Areal, Itapema - SC, 88220-000</p>
+        <p>© 2026 Refúgio Dellarosa. Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/explore/search/keyword/?q=Cabana%20Ref%C3%BAgio%20Dellarosa" target="_blank" rel="noopener noreferrer">Instagram · Cabana Refúgio Dellarosa</a>
+        <a href="https://www.airbnb.com.br/s/Itapema--SC/homes?query=Cabana%20Ref%C3%BAgio%20Dellarosa" target="_blank" rel="noopener noreferrer">Airbnb · Cabana Refúgio Dellarosa</a>
+        <a href="tel:+5547992504916">(47) 99250-4916</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="float-wa" href="https://wa.me/5547992504916?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Ref%C3%BAgio%20Dellarosa%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20acomoda%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no WhatsApp">WhatsApp</a>
+
+  <script>
+    (function () {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        document.querySelectorAll(".reveal").forEach(function (el) {
+          el.classList.add("is-visible");
+        });
+        return;
+      }
+      var io = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { rootMargin: "0px 0px -12% 0px", threshold: 0.08 }
+      );
+      document.querySelectorAll(".reveal").forEach(function (el) {
+        io.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>
